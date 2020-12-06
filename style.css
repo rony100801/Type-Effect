@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid white;
+}
+
+.type-text {
+  font-weight: normal;
+  color: aqua;
+}
+
+.cursor {
+  width: 3px;
+  display: inline-block;
+  background-color: orange;
+  margin-left: 2px;
+  animation: kedip 1s infinite;
+}
+
+.cursor.typing {
+  animation: none;
+}
+
+@keyframes kedip {
+  0% {background-color: red;}
+  25% {background-color: orange;}
+  49% {background-color: transparent;}
+  50% {background-color: transparent;}
+  85% {background-color: transparent;}
+  99% {background-color: red;}
+  100% {background-color: yellow;}
+}
